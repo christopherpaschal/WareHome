@@ -9,17 +9,14 @@ class Nav extends Component {
     return (
       <nav className="navbar navbar-default">
         <div className="navbar-header">
-          <Link className="navbar-brand" to="/">Chuck Norris World</Link>
+          <Link className="navbar-brand" to="/home">WareHome</Link>
         </div>
         <ul className="nav navbar-nav">
           <li>
-            <Link to="/">Food Jokes</Link>
+            <Link to="/items">My Items</Link>
           </li>
           <li>
-            {
-             ( isLoggedIn() ) ? <Link to="/special">Celebrity Jokes</Link> :  ''
-            }
-
+            <Link to="/locations">My Locations</Link>
           </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
