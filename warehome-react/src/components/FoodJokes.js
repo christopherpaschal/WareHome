@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from './Nav';
 import { isLoggedIn } from '../utils/AuthService';
-import { getFoodData } from '../api/chucknorris-api';
+import { getFoodData } from '../api/warehome-api';
 
 class FoodJokes extends Component {
 

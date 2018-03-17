@@ -3,7 +3,12 @@ import { getAccessToken } from '../utils/AuthService';
 
 const BASE_URL = 'http://localhost:3333';
 
-export {getFoodData, getCelebrityData};
+export {getItemData, getFoodData, getCelebrityData};
+
+function getItemData() {
+  const url = `${BASE_URL}/api/items`;
+  return axios.get(url).then(response => response.data);
+}
 
 function getFoodData() {
   const url = `${BASE_URL}/api/jokes/food`;
