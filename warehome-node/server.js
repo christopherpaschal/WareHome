@@ -29,19 +29,23 @@ app.get('/api/items', (req, res) => {
   let items = [
     {
       id: 1,
-      name: 'Signed Tech Football'
+      name: 'Signed Tech Football',
+      notes: ''
     },
     {
       id: 2,
-      name: 'Tech Memorabilia'
+      name: 'Tech Memorabilia',
+      notes: 'there are alot of things in here'
     },
     {
       id: 3,
-      name: 'Star Student Award'
+      name: 'Star Student Award',
+      notes: ''
     },
     {
       id: 4,
-      name: 'WWII Helmets'
+      name: 'WWII Helmets',
+      notes: ''
     }
   ];
   res.json(items);
